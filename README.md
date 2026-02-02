@@ -39,12 +39,10 @@ The project uses MPI (via `mpi4py`) to parallelize heavy workloads, significantl
 
 The engine identifies the 'k' most similar items using several metrics:
 
-* 
-**Image Similarity:** Pairwise Cosine Similarity between VGG16 vectors and normalized color vectors.
+* **Image Similarity:** Pairwise Cosine Similarity between VGG16 vectors and normalized color vectors.
 
 
-* 
-**PageRank Score:** Builds a graph using structural similarity as weighted edges to determine the "importance" of each POI.
+* **PageRank Score:** Builds a graph using structural similarity as weighted edges to determine the "importance" of each POI.
 
 
 
