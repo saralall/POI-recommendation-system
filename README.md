@@ -25,16 +25,13 @@ This system provides a multi-faceted approach to tourist recommendations by anal
 
 The project uses MPI (via `mpi4py`) to parallelize heavy workloads, significantly reducing processing time compared to sequential execution.
 
-* 
-**VGG16 Features:** Extracts 4096-dimensional vectors representing high-level image content.
+* **VGG16 Features:** Extracts 4096-dimensional vectors representing high-level image content.
 
 
-* 
-**Dominant Colors:** Uses K-Means clustering () to find representative color palettes.
+* **Dominant Colors:** Uses K-Means clustering () to find representative color palettes.
 
 
-* 
-**Structural Similarity:** Employs the Jaccard Index to measure similarity based on shared categories within a city.
+* **Structural Similarity:** Employs the Jaccard Index to measure similarity based on shared categories within a city.
 
 
 
@@ -53,16 +50,13 @@ The engine identifies the 'k' most similar items using several metrics:
 
 ### 3. Web Application (Django)
 
-* 
-**Models:** Defines the schema for Cities, Places, Categories, and pre-computed Similarities.
+* **Models:** Defines the schema for Cities, Places, Categories, and pre-computed Similarities.
 
 
-* 
-**Views:** Handles user requests for city listings and detailed POI views.
+* **Views:** Handles user requests for city listings and detailed POI views.
 
 
-* 
-**Templates:** Responsive UI built with Bootstrap and Django Template Language.
+* **Templates:** Responsive UI built with Bootstrap and Django Template Language.
 
 
 
@@ -70,15 +64,12 @@ The engine identifies the 'k' most similar items using several metrics:
 
 The PostgreSQL database consists of 17 tables, including:
 
-* 
-`p160b013_place`: Main POI data and PageRank scores.
+* `p160b013_place`: Main POI data and PageRank scores.
 
 
-* 
-`p160b013_imagefeature`: High-level visual fingerprints.
+* `p160b013_imagefeature`: High-level visual fingerprints.
 
 
-* 
-`p160b013_similarplace`: Pre-computed similarity results for fast UI response.
+* `p160b013_similarplace`: Pre-computed similarity results for fast UI response.
 
 
